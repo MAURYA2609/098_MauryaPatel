@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="flavanoids <= 1.575\nentropy = 1.581\nsamples = 142\nvalue = [48, 51, 43]\nclass = class_1", fillcolor="#f9fefb"] ;
+1 [label="color_intensity <= 3.725\nentropy = 0.699\nsamples = 53\nvalue = [0, 10, 43]\nclass = class_2", fillcolor="#9e67eb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="entropy = 0.0\nsamples = 9\nvalue = [0, 9, 0]\nclass = class_1", fillcolor="#39e581"] ;
+1 -> 5 ;
+6 [label="alcalinity_of_ash <= 17.4\nentropy = 0.156\nsamples = 44\nvalue = [0, 1, 43]\nclass = class_2", fillcolor="#843ee6"] ;
+1 -> 6 ;
+11 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = class_1", fillcolor="#39e581"] ;
+6 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 43\nvalue = [0, 0, 43]\nclass = class_2", fillcolor="#8139e5"] ;
+6 -> 12 ;
+2 [label="alcohol <= 12.785\nentropy = 0.996\nsamples = 89\nvalue = [48, 41, 0]\nclass = class_0", fillcolor="#fbede2"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 0.0\nsamples = 36\nvalue = [0, 36, 0]\nclass = class_1", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="magnesium <= 87.5\nentropy = 0.451\nsamples = 53\nvalue = [48, 5, 0]\nclass = class_0", fillcolor="#e88e4e"] ;
+2 -> 4 ;
+7 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4, 0]\nclass = class_1", fillcolor="#39e581"] ;
+4 -> 7 ;
+8 [label="color_intensity <= 3.435\nentropy = 0.144\nsamples = 49\nvalue = [48, 1, 0]\nclass = class_0", fillcolor="#e6843d"] ;
+4 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = class_1", fillcolor="#39e581"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 48\nvalue = [48, 0, 0]\nclass = class_0", fillcolor="#e58139"] ;
+8 -> 10 ;
+}
